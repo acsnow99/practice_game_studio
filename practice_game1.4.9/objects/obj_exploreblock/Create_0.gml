@@ -32,3 +32,5 @@ movement_inputs[2] = vk_left;
 movement_inputs[3] = vk_down;
 
 health = 100;
+
+//BIG OBVIOUS MESSAGE!!
