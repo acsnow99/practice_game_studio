@@ -1,0 +1,3 @@
+5/7/19:
+Doing a little morning work. This time I made the spawn point not save immediately when the player respawns.
+At least I think that's what I did.... We'll see how it goes.

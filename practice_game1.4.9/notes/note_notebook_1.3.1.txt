@@ -1,0 +1,19 @@
+4/28/19: Found some interesting things within the fade in/out objects: apparently, the objects were changing the 
+alpha of the entire game, not the alpha of the rectangles they were drawing. What's more, the rectangles weren't 
+even drawing in the view. The reason I thought it was working was because when the alpha changed for the entire 
+game, it looked like the background color was covering all the objects. 
+
+To fix this, I put the correct functions to get the view's coordinates in the fade in/out objects, and set the
+alpha to 1 at the end of every step event in the same objects. 
+
+In this version, I also finished the camera transitions between rooms(overall game rooms, not the walled rooms
+within each room). 
+
+
+5/1: Happy May Day!
+
+Today I finally figured out the jump mechanic! Although it is very stiff and slow feeling. 
+I ditched the old jump code inside the jumping object and replaced it with a system in which
+a vertical distance variable would update every step, and that would be added to the player's y value.
+Soon I will start creating pits to fall into(Oracle of Ages style). Maybe even some that would drop
+the player into a different room?

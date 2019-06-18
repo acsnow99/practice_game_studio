@@ -1,0 +1,9 @@
+5/10/19:
+Today I created a bottomFUL pit, as opposed to a bottomless pit. It transports the player to a "lower" room when
+they collide with it. It also draws them in the same way as bottomless pits, since I linked all the pits
+using a parent object. I also had to include a lot of code that I had used for room changes from walking off
+the screen before. I finally got the alarms to work together, and now the player will appear in the basement
+room whenever they fall into one of the pits with the shadowy effect on it. 
+
+Also tried to create an animation when the player is falling into a pit, so they look smaller when they're
+deeper in. 

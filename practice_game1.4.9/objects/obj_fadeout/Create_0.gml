@@ -1,0 +1,1 @@
+variable_timer = 30;

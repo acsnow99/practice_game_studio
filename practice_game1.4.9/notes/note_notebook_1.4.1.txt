@@ -1,0 +1,22 @@
+5/6/19:
+Now I can kill myself! I added a failstate, where when the player's health is zero or lower, 
+which can manually be set with ctrl, they will spawn at the right point, 
+and the camera will move quickly back to where the player is.
+Next up is spawn point implementation.
+
+Spawn points work now. They give a little message when they save and keep track of the location
+the player was in when they saved. I may change this to spawn in a location slightly off from the player's
+save location as to not save immediately after respawning. Also, the spawn point 
+sprite actually shows up now, as I remembered that if I include a draw event, 
+I need to tell the IDE to draw the sprite as well.
+
+Now that I check the function in other rooms, the spawn point does not work quite well when the player
+saves in a different room from the starting room. I do not know the cause at the moment.
+
+The cause was that the player object moves to a preset x and y whenever the room starts and it's not the 
+first room. It counted respawns the same way, so I made a bool variable 'ded' to keep track of whether 
+the player was ded or just moving rooms.
+
+To make the spawnpoint's messages pop out, I made a 'figurehead' object that is only the sprite, which goes
+on the layer below the player. Then, the actual coded object is invisible,
+but displays text on the top layer.

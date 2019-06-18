@@ -1,0 +1,4 @@
+5/4/19:
+Well, today I started making a fail state system. In the control object, spawnpoint object, and the player object,
+you can find code that builds a system of spawn points and fail states. Soon I'll make a spawn point sprite
+and actually implement obstacles that decrease health/kill the player.

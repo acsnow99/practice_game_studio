@@ -1,0 +1,1 @@
+instance_create_layer(obj_wall_gate_light_closed.x,obj_wall_gate_light_closed.y,"Walls",obj_wall_gate_light_open)
