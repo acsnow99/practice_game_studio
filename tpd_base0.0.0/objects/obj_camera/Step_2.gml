@@ -1,7 +1,7 @@
 #macro view view_camera[0]
 camera_set_view_size(view, view_width, view_height);
 
-if (instance_exists(obj_exploreblock) and not (obj_exploreblock.x == 1 and obj_exploreblock.y == 1)){
+if (instance_exists(obj_player) and not (obj_player.x == 1 and obj_player.y == 1)){
 	
 	var _x;
 	var _y;
@@ -20,19 +20,19 @@ if (instance_exists(obj_exploreblock) and not (obj_exploreblock.x == 1 and obj_e
 	#endregion
 	
 	if (room == 0) {
-		if (obj_exploreblock.x >= -25 and obj_exploreblock.x <= 1400 and obj_exploreblock.y >= -25 and obj_exploreblock.y <= 700){
-			_x = clamp(obj_exploreblock.x - view_width / 2, 0, 1400 - view_width);
-			_y = clamp(obj_exploreblock.y - view_height / 2, 0, 720 - view_height);
+		if (obj_player.x >= -25 and obj_player.x <= 1400 and obj_player.y >= -25 and obj_player.y <= 700){
+			_x = clamp(obj_player.x - view_width / 2, 0, 1400 - view_width);
+			_y = clamp(obj_player.y - view_height / 2, 0, 720 - view_height);
 			assigned = true;
 		}
-		else if (obj_exploreblock.x > 1400 and obj_exploreblock.x <= 2825 and obj_exploreblock.y >= -25 and obj_exploreblock.y <= 2025){
-			_x = clamp(obj_exploreblock.x - view_width / 2, 1400, 2800 - view_width);
-			_y = clamp(obj_exploreblock.y - view_height / 2, 0, 2000 - view_height);
+		else if (obj_player.x > 1400 and obj_player.x <= 2825 and obj_player.y >= -25 and obj_player.y <= 2025){
+			_x = clamp(obj_player.x - view_width / 2, 1400, 2800 - view_width);
+			_y = clamp(obj_player.y - view_height / 2, 0, 2000 - view_height);
 			assigned = true;
 		}
-		else if (obj_exploreblock.x >= -25 and obj_exploreblock.x <= 1400 and obj_exploreblock.y > 700 and obj_exploreblock.y <= 2025){
-			_x = clamp(obj_exploreblock.x - view_width / 2, 0, 1400 - view_width);
-			_y = clamp(obj_exploreblock.y - view_height / 2, 700, 2000 - view_height);
+		else if (obj_player.x >= -25 and obj_player.x <= 1400 and obj_player.y > 700 and obj_player.y <= 2025){
+			_x = clamp(obj_player.x - view_width / 2, 0, 1400 - view_width);
+			_y = clamp(obj_player.y - view_height / 2, 700, 2000 - view_height);
 			assigned = true;
 		}
 		else {
@@ -41,27 +41,27 @@ if (instance_exists(obj_exploreblock) and not (obj_exploreblock.x == 1 and obj_e
 	}
 	else if (room == 1) {
 		//C
-		if (obj_exploreblock.x >= -25 and obj_exploreblock.x < 2300 and obj_exploreblock.y >= -25 and obj_exploreblock.y < 500){
-			_x = clamp(obj_exploreblock.x - view_width / 2, 0, 2800 - view_width);
-			_y = clamp(obj_exploreblock.y - view_height / 2, 0, 720 - view_height); //Do not make the clamp less than 720(view_height); camera will jump out of bounds if you do
+		if (obj_player.x >= -25 and obj_player.x < 2300 and obj_player.y >= -25 and obj_player.y < 500){
+			_x = clamp(obj_player.x - view_width / 2, 0, 2800 - view_width);
+			_y = clamp(obj_player.y - view_height / 2, 0, 720 - view_height); //Do not make the clamp less than 720(view_height); camera will jump out of bounds if you do
 			assigned = true;
 		}
 		//B
-		else if (obj_exploreblock.x >= 2300 and obj_exploreblock.x <= 2825 and obj_exploreblock.y >= 500 and obj_exploreblock.y <= 2025){
-			_x = clamp(obj_exploreblock.x - view_width / 2, 2300, 2800 - view_width);
-			_y = clamp(obj_exploreblock.y - view_height / 2, 0, 2000 - view_height);
+		else if (obj_player.x >= 2300 and obj_player.x <= 2825 and obj_player.y >= 500 and obj_player.y <= 2025){
+			_x = clamp(obj_player.x - view_width / 2, 2300, 2800 - view_width);
+			_y = clamp(obj_player.y - view_height / 2, 0, 2000 - view_height);
 			assigned = true;
 		}
 		//A
-		else if (obj_exploreblock.x >= 2300 and obj_exploreblock.x <= 2825 and obj_exploreblock.y >= -25 and obj_exploreblock.y <= 500){
-			_x = clamp(obj_exploreblock.x - view_width / 2, 1500, 2800 - view_width);
-			_y = clamp(obj_exploreblock.y - view_height / 2, 0, 1000 - view_height);
+		else if (obj_player.x >= 2300 and obj_player.x <= 2825 and obj_player.y >= -25 and obj_player.y <= 500){
+			_x = clamp(obj_player.x - view_width / 2, 1500, 2800 - view_width);
+			_y = clamp(obj_player.y - view_height / 2, 0, 1000 - view_height);
 			assigned = true;
 		}
 		//D
-		else if (obj_exploreblock.x >= -25 and obj_exploreblock.x <= 2300 and obj_exploreblock.y > 500 and obj_exploreblock.y <= 2025){
-			_x = clamp(obj_exploreblock.x - view_width / 2, 0, 2350 - view_width);
-			_y = clamp(obj_exploreblock.y - view_height / 2, 450, 2000 - view_height);
+		else if (obj_player.x >= -25 and obj_player.x <= 2300 and obj_player.y > 500 and obj_player.y <= 2025){
+			_x = clamp(obj_player.x - view_width / 2, 0, 2350 - view_width);
+			_y = clamp(obj_player.y - view_height / 2, 450, 2000 - view_height);
 			assigned = true;
 		}
 		else {
@@ -69,19 +69,19 @@ if (instance_exists(obj_exploreblock) and not (obj_exploreblock.x == 1 and obj_e
 		}
 	}
 	else if (room == 2) {
-		if (obj_exploreblock.x >= -25 and obj_exploreblock.x <= 1400 and obj_exploreblock.y >= -25 and obj_exploreblock.y <= 700){
-			_x = clamp(obj_exploreblock.x - view_width / 2, 0, 1400 - view_width);
-			_y = clamp(obj_exploreblock.y - view_height / 2, 0, 720 - view_height);
+		if (obj_player.x >= -25 and obj_player.x <= 1400 and obj_player.y >= -25 and obj_player.y <= 700){
+			_x = clamp(obj_player.x - view_width / 2, 0, 1400 - view_width);
+			_y = clamp(obj_player.y - view_height / 2, 0, 720 - view_height);
 			assigned = true;
 		}
-		else if (obj_exploreblock.x > 1400 and obj_exploreblock.x <= 2825 and obj_exploreblock.y >= -25 and obj_exploreblock.y <= 2025){
-			_x = clamp(obj_exploreblock.x - view_width / 2, 1400, 2800 - view_width);
-			_y = clamp(obj_exploreblock.y - view_height / 2, 0, 2000 - view_height);
+		else if (obj_player.x > 1400 and obj_player.x <= 2825 and obj_player.y >= -25 and obj_player.y <= 2025){
+			_x = clamp(obj_player.x - view_width / 2, 1400, 2800 - view_width);
+			_y = clamp(obj_player.y - view_height / 2, 0, 2000 - view_height);
 			assigned = true;
 		}
-		else if (obj_exploreblock.x >= -25 and obj_exploreblock.x <= 1400 and obj_exploreblock.y > 700 and obj_exploreblock.y <= 2025){
-			_x = clamp(obj_exploreblock.x - view_width / 2, 0, 1400 - view_width);
-			_y = clamp(obj_exploreblock.y - view_height / 2, 700, 2000 - view_height);
+		else if (obj_player.x >= -25 and obj_player.x <= 1400 and obj_player.y > 700 and obj_player.y <= 2025){
+			_x = clamp(obj_player.x - view_width / 2, 0, 1400 - view_width);
+			_y = clamp(obj_player.y - view_height / 2, 700, 2000 - view_height);
 			assigned = true;
 		}
 		else {
@@ -89,19 +89,19 @@ if (instance_exists(obj_exploreblock) and not (obj_exploreblock.x == 1 and obj_e
 		}
 	}
 	else if (room == 3) {
-		if (obj_exploreblock.x >= -25 and obj_exploreblock.x <= 1400 and obj_exploreblock.y >= -25 and obj_exploreblock.y <= 700){
-			_x = clamp(obj_exploreblock.x - view_width / 2, 0, 1400 - view_width);
-			_y = clamp(obj_exploreblock.y - view_height / 2, 0, 720 - view_height);
+		if (obj_player.x >= -25 and obj_player.x <= 1400 and obj_player.y >= -25 and obj_player.y <= 700){
+			_x = clamp(obj_player.x - view_width / 2, 0, 1400 - view_width);
+			_y = clamp(obj_player.y - view_height / 2, 0, 720 - view_height);
 			assigned = true;
 		}
-		else if (obj_exploreblock.x > 1400 and obj_exploreblock.x <= 2825 and obj_exploreblock.y >= -25 and obj_exploreblock.y <= 2025){
-			_x = clamp(obj_exploreblock.x - view_width / 2, 1400, 2800 - view_width);
-			_y = clamp(obj_exploreblock.y - view_height / 2, 0, 2000 - view_height);
+		else if (obj_player.x > 1400 and obj_player.x <= 2825 and obj_player.y >= -25 and obj_player.y <= 2025){
+			_x = clamp(obj_player.x - view_width / 2, 1400, 2800 - view_width);
+			_y = clamp(obj_player.y - view_height / 2, 0, 2000 - view_height);
 			assigned = true;
 		}
-		else if (obj_exploreblock.x >= -25 and obj_exploreblock.x <= 1400 and obj_exploreblock.y > 700 and obj_exploreblock.y <= 2025){
-			_x = clamp(obj_exploreblock.x - view_width / 2, 0, 1400 - view_width);
-			_y = clamp(obj_exploreblock.y - view_height / 2, 700, 2000 - view_height);
+		else if (obj_player.x >= -25 and obj_player.x <= 1400 and obj_player.y > 700 and obj_player.y <= 2025){
+			_x = clamp(obj_player.x - view_width / 2, 0, 1400 - view_width);
+			_y = clamp(obj_player.y - view_height / 2, 700, 2000 - view_height);
 			assigned = true;
 		}
 		else {
@@ -111,9 +111,9 @@ if (instance_exists(obj_exploreblock) and not (obj_exploreblock.x == 1 and obj_e
 	
 	//may not need this else if, since I extended the boundaries on all sides for the camera. 
 	//the camera doesn't move farther, but the player can be farther outside the room for the camera to be in the same position
-	//else if (obj_exploreblock.x < 0) {
+	//else if (obj_player.x < 0) {
 	//	_x = 0;
-	//	_y = clamp(obj_exploreblock.y - view_height / 2, 700, 2000 - view_height);
+	//	_y = clamp(obj_player.y - view_height / 2, 700, 2000 - view_height);
 	//}
 	
 	if assigned {

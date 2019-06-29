@@ -115,6 +115,25 @@
             }
         },
         {
+            "Key": "154acffe-402c-4274-afa1-38eb5372addf",
+            "Value": {
+                "id": "897fe6bb-fe0d-40b6-8365-a4b41303a592",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "views\/154acffe-402c-4274-afa1-38eb5372addf.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "4a1f43f5-6baf-48ed-85cd-e5631dcc1295",
             "Value": {
                 "id": "0f0ceeb9-369a-4fcc-aab9-4ccbb5563562",
@@ -148,7 +167,26 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "objects\/obj_exploreblock\/obj_exploreblock.yy",
+                "resourcePath": "objects\/obj_player\/obj_player.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "52102241-e18e-40dc-8fa5-b2ac9fcd3f3d",
+            "Value": {
+                "id": "08577fe0-b1c7-4a45-bfc8-a2db3debf441",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/obj_fadeout\/obj_fadeout.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -172,6 +210,25 @@
             }
         },
         {
+            "Key": "5a0ec472-5d7b-46f0-b244-230b395b0785",
+            "Value": {
+                "id": "1eda6620-20fa-4305-988b-c08a0a8b1a45",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/obj_control\/obj_control.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "65bda0bc-c2ee-4f97-887c-00464c910751",
             "Value": {
                 "id": "b79d1f6f-3204-455c-877d-56545fbd0708",
@@ -187,6 +244,25 @@
                     "default"
                 ],
                 "resourcePath": "views\/65bda0bc-c2ee-4f97-887c-00464c910751.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "777fd912-372f-4f0f-820a-5dfc55edbb12",
+            "Value": {
+                "id": "07815b42-2f40-4b8a-9148-b153ffd05942",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "views\/777fd912-372f-4f0f-820a-5dfc55edbb12.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -207,6 +283,25 @@
                 ],
                 "resourcePath": "views\/7a4a5ba8-7bbe-4fba-bbc9-4c996d7788ef.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "7aa1cf02-790d-419f-b9a9-d4775e1898d4",
+            "Value": {
+                "id": "a95e3488-7d43-486d-92c7-9b63d8539ea0",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/obj_fadein\/obj_fadein.yy",
+                "resourceType": "GMObject"
             }
         },
         {

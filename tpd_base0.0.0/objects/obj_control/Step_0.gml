@@ -1,0 +1,1 @@
+global.gametime += global.dt_steady;
